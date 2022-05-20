@@ -1,0 +1,31 @@
+div.online-indicator1{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  background-color: #de0d05;
+  border-radius: 50%;
+
+  position: relative;
+}
+span.blink1{
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  background-color: #db552f;
+  opacity: 0.7;
+  border-radius: 50%;
+
+  animation: blink 1s linear infinite;
+}
+
+/*Animations*/
+
+@keyframes blink1 {
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
